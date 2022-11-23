@@ -1,10 +1,11 @@
-pipeline{
-agent any{
-stages{
-        stage('check validate')
-        {
-        echo ' I am validating'
+pipeline {
+    agent any
+
+    stages {
+        stage('validate') {
+            steps {
+                echo 'validating'
+            }
         }
-      }
-      }
-      }
+    }
+}
